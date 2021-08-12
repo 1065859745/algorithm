@@ -14,6 +14,7 @@ let bigger = []
                 if (arr[i].dice < arr[j].dice) {
                     isBigger = false
                     i = j -1
+                    bread
                 }
             }
             if (isBigger) {
