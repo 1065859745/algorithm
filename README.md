@@ -36,3 +36,17 @@ function getBigger(arr) {
 }
 getBigger(a)
 ```
+## 洗牌算法
+```javascript
+var arr = [-2,1,3,4,5,6,7,8,9];
+shuffle(arr)
+function shuffle(arr) {
+    for (let i = arr.length; i >0; i--) {
+        let index = parseInt(Math.random() * i);
+        let temp = arr[index];
+        arr[index] = arr[i - 1];
+        arr[i - 1] = temp;
+    }
+    return arr;
+}
+```
